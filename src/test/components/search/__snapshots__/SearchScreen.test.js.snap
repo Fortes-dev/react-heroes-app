@@ -1,0 +1,201 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Suite en SearchScreen Debe mostrar a Batman y el input con el valor del queryString 1`] = `
+<div>
+  <h1>
+    Búsquedas
+  </h1>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h4>
+        Search Form
+      </h4>
+      <hr />
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="Buscar un héroe"
+          type="text"
+          value="batman"
+        />
+        <button
+          className="btn btn-outline-primary mt-2"
+          type="submit"
+        >
+          Buscar
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-7"
+    >
+      <h4>
+        Resultados
+      </h4>
+      <hr />
+      <div
+        className="col animate__animated animate__fadeIn"
+      >
+        <div
+          className="card"
+        >
+          <div
+            className="row no-gutters"
+          >
+            <div
+              className="col-4"
+            >
+              <img
+                alt="Batman"
+                className="card-img"
+                src="/assets/dc-batman.jpg"
+              />
+            </div>
+            <div
+              className="col-8"
+            >
+              <div
+                className="card-body"
+              >
+                <h5
+                  className="card-title"
+                >
+                  Batman
+                </h5>
+                <p
+                  className="card-text"
+                >
+                  Bruce Wayne
+                </p>
+                <a
+                  href="/hero/dc-batman"
+                  onClick={[Function]}
+                >
+                  Más info...
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Suite en SearchScreen Debe mostrar el snapshot 1`] = `
+<div>
+  <h1>
+    Búsquedas
+  </h1>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h4>
+        Search Form
+      </h4>
+      <hr />
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="Buscar un héroe"
+          type="text"
+          value=""
+        />
+        <button
+          className="btn btn-outline-primary mt-2"
+          type="submit"
+        >
+          Buscar
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-7"
+    >
+      <h4>
+        Resultados
+      </h4>
+      <hr />
+      <div
+        className="alert alert-info"
+      >
+        Buscar un héroe
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Suite en SearchScreen Debe mostrar un error si no se encuentra el hero 1`] = `
+<div>
+  <h1>
+    Búsquedas
+  </h1>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h4>
+        Search Form
+      </h4>
+      <hr />
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="Buscar un héroe"
+          type="text"
+          value="batman123"
+        />
+        <button
+          className="btn btn-outline-primary mt-2"
+          type="submit"
+        >
+          Buscar
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-7"
+    >
+      <h4>
+        Resultados
+      </h4>
+      <hr />
+      <div
+        className="alert alert-danger"
+      >
+        No hay resultados: 
+        batman123
+      </div>
+    </div>
+  </div>
+</div>
+`;
